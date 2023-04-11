@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+}
+
+.hide{
+  display: none;
+}
+
+body{
+  background: linear-gradient(90deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+}
+main{
+  background: #FFFFFF;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem , 90%);
+  text-align: center;
+}
+
+/* screen1 */
+
+.screen1 p{
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #34355B;
+}
+
+.screen1 img:hover{
+  animation: shake 0.4s infinite;
+}
+
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: #34355B;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin-bottom: 1.7rem;
+}
+
+/* screen2 */
+
+
+.screen2 p{
+  font-family: 'Dancing Script', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.screen2 img{
+  margin-bottom: 1.7rem;
+  
+}
+
+.screen2 button{
+  font-family: 'DM Sans', sans-serif;
+  background: #FF9500;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  color: #FFFFFF;
+  border-style: none;
+  
+}
+button:hover{
+  background: #af6601;
+  transition: 1s;
+}
+
+.msg{
+  padding: 1rem;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  margin-bottom: 2.7rem;
+  width: 30rem;
+
+  animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+ }
+
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
