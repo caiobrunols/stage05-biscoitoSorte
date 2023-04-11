@@ -2,7 +2,7 @@ const screen1 = document.querySelector(".screen1");
 const screen2 = document.querySelector(".screen2"); 
 const btnLuck = document.querySelector("#btnLuck");
 const btnReset = document.querySelector("#btnReset");
-let randomNumber = Math.round(Math.random() * 10);
+let randomNumber = Math.round(Math.random() * 9);
 let phases = [`A vida trará coisas boas se tiver paciência.`,
  `Demonstre amor e alegria em todas as oportunidades e verá que a paz nasce dentro de si.`,
  `Não há que ser forte. Há que ser flexível.`,
