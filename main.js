@@ -3,7 +3,7 @@ const screen2 = document.querySelector(".screen2");
 const btnLuck = document.querySelector("#btnLuck");
 const btnReset = document.querySelector("#btnReset");
 let randomNumber = Math.round(Math.random() * 9);
-let phases = [`A vida trará coisas boas se tiver paciência.`,
+let phrases = [`A vida trará coisas boas se tiver paciência.`,
  `Demonstre amor e alegria em todas as oportunidades e verá que a paz nasce dentro de si.`,
  `Não há que ser forte. Há que ser flexível.`,
  `Podemos escolher o que semear, mas somos obrigados a colher o que plantamos`,
@@ -22,7 +22,7 @@ function handleTryClick(e){
   e.preventDefault();
   
   toggleScreen();
-  screen2.querySelector("p").innerText = phases[randomNumber];
+  screen2.querySelector("p").innerText = phrases[randomNumber];
  
 }
 
